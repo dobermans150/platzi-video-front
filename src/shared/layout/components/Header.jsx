@@ -18,7 +18,7 @@ export default function Header() {
       <div className="header__menu">
         <div className="header__menu--profile">
           <img src={userIcon} alt="user" />
-          <p>perfil</p>
+          <p>Perfil</p>
         </div>
         <ul>
           <li>
