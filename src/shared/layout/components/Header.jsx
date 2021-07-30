@@ -9,7 +9,7 @@ import userIcon from '../../../assets/images/user-icon.png';
 export default function Header(props) {
   return (
     <>
-      <header className="header">
+      <header className={`header ${props.classNameHeader}`}>
         <img
           className="header__img"
           src={platziVideoLogo}

@@ -1,3 +1,8 @@
-.login {
-  background-color: black;
+.main-login {
+  min-height: 100vh;
+  height: auto;
+}
+
+.background-header {
+  background-color: #21c08b;
 }
