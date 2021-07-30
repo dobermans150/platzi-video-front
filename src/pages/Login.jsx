@@ -1,9 +1,10 @@
 import React from 'react';
+import Layout from '../shared/layout/components/Layout';
 import './styles/Login.css';
 export default function Login() {
   return (
-    <div>
+    <Layout className="login">
       <h1>we</h1>
-    </div>
+    </Layout>
   );
 }

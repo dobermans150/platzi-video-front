@@ -16,20 +16,22 @@ export default function Header(props) {
           alt="logo Platzi Video"
         />
 
-        <div className="header__menu">
-          <div className="header__menu--profile">
-            <img src={userIcon} alt="user" />
-            <p>Perfil</p>
+        {props.isLoggedIn && (
+          <div className="header__menu">
+            <div className="header__menu--profile">
+              <img src={userIcon} alt="user" />
+              <p>Perfil</p>
+            </div>
+            <ul>
+              <li>
+                <Link to="/">Cuenta</Link>
+              </li>
+              <li>
+                <Link to="/">Cerrar Sesion</Link>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <Link to="/">Cuenta</Link>
-            </li>
-            <li>
-              <Link to="/">Cerrar Sesion</Link>
-            </li>
-          </ul>
-        </div>
+        )}
       </header>
 
       {props.children}
