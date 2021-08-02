@@ -7,9 +7,15 @@ import Layout from '../shared/layout/components/Layout';
 
 export default function Home() {
   return (
-    <Layout className="home" isLoggedIn={true}>
+    <Layout
+      className="home"
+      isLoggedIn={true}
+      footerBackground="background-footer--home"
+    >
       <Searcher />
-      <VideoList />
+      <VideoList title="Mi lista" />
+      <VideoList title="Tendencias" />
+      <VideoList title="Originales de Platzi Video" />
     </Layout>
   );
 }

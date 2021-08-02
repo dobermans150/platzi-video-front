@@ -3,3 +3,7 @@
   min-height: 100vh;
   height: auto;
 }
+
+.background-footer--home {
+  background-color: #8f57fd;
+}

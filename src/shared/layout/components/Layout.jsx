@@ -10,7 +10,7 @@ export default function Layout(props) {
         isLoggedIn={props.isLoggedIn}
       />
       {props.children}
-      <Footer />
+      <Footer footerBackground={props.footerBackground} />
     </section>
   );
 }

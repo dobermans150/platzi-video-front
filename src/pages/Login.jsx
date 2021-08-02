@@ -4,7 +4,11 @@ import Layout from '../shared/layout/components/Layout';
 import './styles/Login.css';
 export default function Login() {
   return (
-    <Layout classNameHeader="background-header" className="main-login">
+    <Layout
+      classNameHeader="background-header"
+      className="main-login"
+      footerBackground="background-footer--login "
+    >
       <LoginForm />
     </Layout>
   );
