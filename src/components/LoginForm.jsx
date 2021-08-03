@@ -9,15 +9,17 @@ export default function LoginForm() {
   return (
     <section className="login">
       <section className="login__container">
-        <h2>Inicia Sesion</h2>
+        <h2 tabIndex="0">Inicia Sesion</h2>
 
         <form className="login__container--form">
           <input
+            aria-label="correo"
             className="login__container-input"
             type="text"
             placeholder="Correo"
           />
           <input
+            aria-label="contraseña"
             className="login__container-input"
             type="password"
             placeholder="contraseña"

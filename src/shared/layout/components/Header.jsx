@@ -11,6 +11,7 @@ export default function Header(props) {
     <>
       <header className={`header ${props.classNameHeader}`}>
         <img
+          tabIndex="0"
           className="header__img"
           src={platziVideoLogo}
           alt="logo Platzi Video"
