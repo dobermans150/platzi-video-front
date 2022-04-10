@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles/LoginForm.css';
@@ -6,6 +6,12 @@ import googleIcon from '../assets/images/icons8-google-plus-50.png';
 import twitterIcon from '../assets/images/icons8-twitter-50.png';
 
 export default function LoginForm() {
+  useEffect(() => {
+    const elemnt = document.getElementById('contraseña');
+
+    console.log(elemnt.type);
+  });
+
   return (
     <section className="login">
       <section className="login__container">
@@ -23,6 +29,7 @@ export default function LoginForm() {
             className="login__container-input"
             type="password"
             placeholder="contraseña"
+            id="contraseña"
           />
           <button className="button">Iniciar sesion</button>
           <div className="login__container--remember-me">
